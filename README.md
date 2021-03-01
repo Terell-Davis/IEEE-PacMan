@@ -1,2 +1,2 @@
 # IEEE-PacMan
-GSU IEEE's PacMan Bot challange
+GSU IEEE's PacMan Bot challenge
