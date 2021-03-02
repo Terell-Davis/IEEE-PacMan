@@ -9,3 +9,4 @@ pip3 install Adafruit-PCA9685
 pip3 install threaded
 pip3 install RPi.GPIO
 pip3 install Adafruit-TCS34725
+$SHELL
