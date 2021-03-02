@@ -2,7 +2,7 @@
 GSU IEEE's PacMan Bot challenge
 
 ## Installation
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the required libraries needed for "PacMan". Use [pacman-setup.sh](https://github.com/Terell-Davis/IEEE-PacMan/blob/main/pacman-setup.sh)to install all libraries.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the required libraries needed for "PacMan". Use [pacman-setup.sh](https://github.com/Terell-Davis/IEEE-PacMan/blob/main/pacman-setup.sh) to install all libraries.
 
 
 ```bash
