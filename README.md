@@ -13,8 +13,7 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the req
 ## Connections
 To get started connect the multiplexer to SDA and SCL on the Raspberry Pi. 
 
-Imagine Here
-![alt text]()
+![PinOut](https://github.com/Terell-Davis/IEEE-PacMan/blob/main/Assets/GPIO-Pinout.png)
 
 Below is what each sensor is connected to on the multiplexer.:
 * IMU = SD0, SC0
