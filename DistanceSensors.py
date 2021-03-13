@@ -39,6 +39,7 @@ if __name__ == "__main__":
     while True:
         print("Laser 1 = " + str(Titty.LaserValue[0]))
         print("Laser 2 = " + str(Titty.LaserValue[1]))
+        print("Laser 3 = " + str(Titty.LaserValue[2]))
         time.sleep(1)
 
 

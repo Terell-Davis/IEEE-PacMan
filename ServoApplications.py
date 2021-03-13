@@ -5,21 +5,31 @@ import time, busio, adafruit_vl53l0x, threading, board
 from adafruit_servokit import ServoKit
 
 class ContinuousServos:
-    def __init__(self): self.kit = ServoKit(channels=16, address=0x40)
-    def forward(self, whichServo): self.kit.continuous_servo[whichServo].throttle = 1
-    def backward(self, whichServo): self.kit.continuous_servo[whichServo].throttle = -1
-    def stop(self, whichServo): self.kit.continuous_servo[whichServo].throttle = 0
+    def __init__(self):
+        self.kit = ServoKit(channels=16, address=0x40)
+        
+    def forward(self, leftServo, rightServo):
+        self.kit.continuous_servo[leftServo].throttle = 1
+        self.kit.continuous_servo[rightServo].throttle = -1
+        
+    def backward(self, leftServo, rightServo):
+        self.kit.continuous_servo[leftServo].throttle = -1
+        self.kit.continuous_servo[rightServo].throttle = 1
+        
+    def stop(self, leftServo, rightServo):
+        self.kit.continuous_servo[leftServo].throttle = 0
+        self.kit.continuous_servo[rightServo].throttle = 0
     
 class RobotBase:
     def __init__(self, LeftServo, RightServo):
         self.motors = ContinuousServos()
     def turnLeft(self):
         self.kit.continuous_servo[self.LeftServo].throttle = 1
-        self.kit.continuous_servo[self.RightServo].throttle = -1
+        self.kit.continuous_servo[self.RightServo].throttle = 1
         time.sleep(1)
     def turnRight(self):
         self.kit.continuous_servo[self.LeftServo].throttle = -1
-        self.kit.continuous_servo[self.RightServo].throttle = 1
+        self.kit.continuous_servo[self.RightServo].throttle = -1
         time.sleep(1)
 
 class One80:
