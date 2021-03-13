@@ -6,7 +6,7 @@ from digitalio import DigitalInOut
 import board
 
 
-Pins = [DigitalInOut(board.D17), DigitalInOut(board.D27), DigitalInOut(board.D22)]
+Pins = [DigitalInOut(board.D23), DigitalInOut(board.D24), DigitalInOut(board.D25)]
 Titty = DistanceSensors.Laser(Pins)
 SpinnyBois = ServoApplications.ContinuousServos()
 #Imu = IMUClass.ImuClass()
