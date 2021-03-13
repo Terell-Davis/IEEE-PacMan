@@ -13,9 +13,9 @@ SpinnyBois = ServoApplications.ContinuousServos()
 
 def LaserFunction():
     while True:
-        print("Laser 1 = " + str(Titty.LaserValue[0]))
-        print("Laser 2 = " + str(Titty.LaserValue[1]))
-        print("Laser 3 = " + str(Titty.LaserValue[2]))
+        print("Laser Distance 1 = " + str(Titty.LaserValue[0]))
+        print("Laser Distance 2 = " + str(Titty.LaserValue[1]))
+        print("Laser Distance 3 = " + str(Titty.LaserValue[2]))
         time.sleep(1)
         
 LaserThread = threading.Thread(target=LaserFunction) # Creating a Sensor Polling Thread that pulls the sensor data
